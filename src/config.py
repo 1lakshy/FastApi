@@ -3,6 +3,8 @@ from pydantic import ConfigDict
 
 class Settings(BaseSettings):
     database_url: str
+    JWT_ALGORITHM :str
+    JWT_SECRET: str
 
     model_config = ConfigDict(
         env_file = ".env",
