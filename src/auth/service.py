@@ -33,3 +33,5 @@ class UserService:
 
         await session.commit()
         return new_user
+
+    async def login_user
